@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GAMES FOR PC</title>
+  <meta name="description" content="Site about pc games">
+  <meta name="author" content="Vlad Nechiporenko">
+</head>
+<body>
+  <h1>Gamepedia</h1>
+  <p>This site helps you to know information about PC games</p>
+</body>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<h2><a href='games.html' >Games</a></h2>
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Call_of_Duty_-_Infinite_Warfare_%28promo_image%29.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_LyYiZCGDUx-CXYjHPWJhSy0xOA7zHm6qXu0-fLgL5Pb7AlahQ" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81L8-mjNlrL._SX342_.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/3/33/Overwatch_Origins_Edition_PC_cover.jpg" style="width:100%">
+  </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div> 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</html>
+

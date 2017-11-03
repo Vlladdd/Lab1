@@ -1,0 +1,120 @@
+
+h1{
+    font: italic bold 50px Georgia, serif;
+    background:-webkit-linear-gradient(to right,red,yellow);
+    background:linear-gradient(to right,red,yellow);
+}
+body{
+    background:-webkit-linear-gradient(yellow,red);
+    background:linear-gradient(yellow,red);
+}
+p{
+    font:  30px Lucida ;
+    border:5px solid red;
+    padding:5px;
+    background:-webkit-linear-gradient(to right,orange,red);
+    background:linear-gradient(to right,orange,red);
+}
+p2{
+    font:  Italic Bold 20px  Georgia ,serif;
+    border-bottom:3px solid black;
+}
+h2{
+    font:  30px Times New Roman ;
+    background:white;
+    background:linear-gradient(to right,green,yellow)
+}
+h2:hover{
+    background:gray;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+img:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition-duration:1s;
+}
+p3{
+    font:  20px Lucida ;
+    margin-left:2cm;
+    background:-webkit-linear-gradient(orange,red);
+    background:linear-gradient(orange,red);
+}
+h5{
+    margin:3cm;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 375px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.t-row {
+    margin-left: 40%;
+
+}
+#data td {
+    border: 1px solid white;
+    padding: 8px;
+    width: 60%;
+}
+
+#data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 20%;
+    border-radius: 30px; 
+    border: 10px double black;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
