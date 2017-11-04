@@ -15,9 +15,8 @@ p{
     background:-webkit-linear-gradient(to right,orange,red);
     background:linear-gradient(to right,orange,red);
 }
-p2{
+.text2{
     font:  Italic Bold 20px  Georgia ,serif;
-    border-bottom:3px solid black;
 }
 h2{
     font:  30px Times New Roman ;
